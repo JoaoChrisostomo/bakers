@@ -99,19 +99,21 @@ html{
 
 /* INICIO ABOUT */
 .about{
- background-color: #FFFFFF;
- width: 100%; 
+ background: linear-gradient(to right, #dbdbdb, #ffffff);
+ width: 100%;
  padding-left: 10%;
  padding-right: 10%;
- padding-top: 80px;
- padding-bottom: 80px;
-
+ padding-top: 10px;
+ padding-bottom: 60px;
  display: flex;
  align-items: center;
  justify-content: space-between;
 }
 
 .about div{
+  margin: 6px;
+  padding: 20px;
+  width: 45%;
   max-width: 50%;
   padding-right: 40px;
 }
@@ -121,14 +123,14 @@ html{
   border-radius: 8px;
 }
 
-.about div h2{
+.about div h1{
   font-size: 32px;
   margin-bottom: 14px;
 }
 /* FIM ABOUT */
 
-/* INICIO PROJECTS */
-.projects{
+/* INICIO PRODUCTS */
+.products{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -137,18 +139,18 @@ html{
   padding: 80px 0;
 }
 
-.projects h2{
+.products h2{
   font-size: 32px;
   margin-bottom: 8px;
   margin-top: 20px;
 }
 
-.projects p{
+.products p{
   margin-bottom: 40px;
   font-style: italic;
 }
 
-.project-list{
+.products-list{
   width: 100%;
   margin-bottom: 8px;
   display: flex;
@@ -156,15 +158,17 @@ html{
   align-items: center;
 }
 
-.projects img{
+.products img{
   width: 22%;
   margin-left: 0.5%;
   margin-right: 0.5%;
+  padding: 8px;
   opacity: 0.8;
   transition: 0.9s;
 }
 
-.projects img:hover{
+.products img:hover{
+  transform: scale(1.1);
   opacity: 1;
 }
 
@@ -178,7 +182,7 @@ html{
   margin-top: 18px;
   cursor: pointer;
 }
-/* FIM PROJECTS */
+/* FIM PRODUCTS */
 
 /* INICIO RODAPE */
 footer{
@@ -205,6 +209,12 @@ footer p {
 /* RESPONSIVIDADE */
 
 @media (max-width: 1050px){
+  /* INICIO NAVIGATION */
+  .nav img{
+    width: 40%;
+    height: 80px;
+  }
+
   /* INICIO MAIN */
   .main h1{
     font-size: 45px;
@@ -222,7 +232,7 @@ footer p {
   /* INICIO SOBRE */
   .about{
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -232,19 +242,19 @@ footer p {
     max-width: 80%;
   }
 
-  .about div h2{
+  .about div h1{
     font-size: 45px;
   }
 
   .about img{
     width: 80%;
-    margin-top: 30px;
+    margin-top: 2rem;
   }
   /* FIM SOBRE */
 
   /* INICIO PROJETOS */
-  .projects img{
-    width: 27.5%;
+  .products img{
+    width: 30.5%;
   }
   /* FIM PROJETOS */
 
@@ -262,5 +272,45 @@ footer p {
     margin:0;
   }
   /* FIM RODAPE */
+
+}
+
+@media(max-width:700px){
+  /* INICIO NAVIGATION */
+  .nav{
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list{
+    margin-left: 1rem;
+  }
+  .nav-list a{
+    margin: 4px;
+  }
+  .nav img{
+    padding-bottom: 16px;
+    width: 40%;
+    height: 70px;
+  }
+  /* FIM NAVIGATION */
+
+  /* INICIO SOBRE */
+  .about{
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+@media(max-width:375px){
+  .nav img{
+    width: 80%;
+    height: 80px;
+  }
+  .about div h1{
+    font-size: 3rem;
+  }
 
 }
