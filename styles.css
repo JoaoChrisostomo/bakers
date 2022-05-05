@@ -55,6 +55,8 @@ html{
   background-color: #000;
   height: calc(100vh - 80px);
   background-image: url("img/logo-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   padding-left: 10%;
@@ -184,6 +186,35 @@ html{
 }
 /* FIM PRODUCTS */
 
+/* INICIO FORM */
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  margin: auto;
+  border: 1px solid #f7f3f3;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"]{
+  background-color: #ffffff;
+  border: 1px solid #383737;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 13px;
+  width: 320px;
+}
 /* INICIO RODAPE */
 footer{
   width: 100%;
@@ -204,113 +235,3 @@ footer p {
   margin-left: 12px;
 }
 /* FIM RODAPE */
-
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 1050px){
-  /* INICIO NAVIGATION */
-  .nav img{
-    width: 40%;
-    height: 80px;
-  }
-
-  /* INICIO MAIN */
-  .main h1{
-    font-size: 45px;
-  }
-
-  .main p{
-    font-size: 18px;
-  }
-
-  .main{
-    background-size: cover;
-  }
-  /* FIM MAIN */
-
-  /* INICIO SOBRE */
-  .about{
-    flex-direction: column;
-    padding-top: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-  }
-
-  .about div{
-    max-width: 80%;
-  }
-
-  .about div h1{
-    font-size: 45px;
-  }
-
-  .about img{
-    width: 80%;
-    margin-top: 2rem;
-  }
-  /* FIM SOBRE */
-
-  /* INICIO PROJETOS */
-  .products img{
-    width: 30.5%;
-  }
-  /* FIM PROJETOS */
-
-  /* INICIO RODAPE */
-  footer{
-    flex-direction: column;
-  }
-
-  footer h3{
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-
-  footer p{
-    margin:0;
-  }
-  /* FIM RODAPE */
-
-}
-
-@media(max-width:700px){
-  /* INICIO NAVIGATION */
-  .nav{
-    height: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav-list{
-    margin-left: 1rem;
-  }
-  .nav-list a{
-    margin: 4px;
-  }
-  .nav img{
-    padding-bottom: 16px;
-    width: 40%;
-    height: 70px;
-  }
-  /* FIM NAVIGATION */
-
-  /* INICIO SOBRE */
-  .about{
-    flex-direction: column;
-    padding-top: 30px;
-  }
-}
-
-@media(max-width:375px){
-  .nav img{
-    width: 80%;
-    height: 80px;
-  }
-  .about div h1{
-    font-size: 3rem;
-  }
-
-}
