@@ -101,7 +101,9 @@ html{
 
 /* INICIO ABOUT */
 .about{
- background: linear-gradient(to right, #dbdbdb, #ffffff);
+ background-image: url(/img/about2.png);
+ background-repeat: no-repeat;
+ background-size: calc(30px * 100vw);
  width: 100%;
  padding-left: 10%;
  padding-right: 10%;
@@ -121,13 +123,19 @@ html{
 }
 
 .about img{
+  margin-top: 5rem;
   max-width: 450px;
   border-radius: 8px;
 }
 
 .about div h1{
-  font-size: 32px;
+  font-size: 26px;
   margin-bottom: 14px;
+  color: #ffffff;
+}
+.about div p{
+  font-size: 18px;
+  color: #ffffff;
 }
 /* FIM ABOUT */
 
@@ -159,7 +167,11 @@ html{
   justify-content: center;
   align-items: center;
 }
-
+.products-list p{
+  padding: -10px -20px;
+  font-size: 18px;
+  color: #000000;
+}
 .products img{
   width: 22%;
   margin-left: 0.5%;
@@ -187,34 +199,92 @@ html{
 /* FIM PRODUCTS */
 
 /* INICIO FORM */
-
-.form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 form{
+  background-image: url(/img/Sourdough-bread.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 80px 0;
-  margin: auto;
-  border: 1px solid #f7f3f3;
+  border: 1px solid #0f0f0f;
 }
-
-input[type="text"], input[type="email"], input[type="tel"], input[type="password"]{
+.group-inputs{
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+}
+.group-inputs h2{
+  color: #2b2b2b;
+  font-size: 32px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], button[type="submit"]{
   background-color: #ffffff;
-  border: 1px solid #383737;
+  border: 1px solid #141414;
   height: 30px;
   border-radius: 4px;
   margin-top: 10px;
   padding: 10px;
-  font-size: 13px;
+  font-size: 18px;
   width: 320px;
 }
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, input[type="password"]::placeholder{
+  color: #141414;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus{
+  outline: 0;
+}
+textarea{
+  font-size: 18px;
+  margin-top: 1rem;
+}
+textarea::placeholder{
+  color: #141414;
+}
+.action-send button{
+  margin-left: 2.3rem;
+  width: 70%;
+  height: 2.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  color: #ffffff;
+  transition: 0.9s;
+  border: 1px solid #141414;
+}
+.action-send button:hover{
+  transform: scale(1.1);
+  background: rgb(241, 207, 10);
+  color: #080808;
+}
+
+.get-app-panel{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.app-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.app-buttons img{
+  height: 50px;
+  padding: 0 2px;
+}
+/* FIM FORM */
+
 /* INICIO RODAPE */
 footer{
   width: 100%;
@@ -235,3 +305,5 @@ footer p {
   margin-left: 12px;
 }
 /* FIM RODAPE */
+
+
