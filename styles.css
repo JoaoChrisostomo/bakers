@@ -147,7 +147,7 @@ html{
 }
 .container{
   display: flex;
-  justify-content:  space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2rem;
@@ -177,21 +177,6 @@ html{
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 0.5rem;
-}
-
-.overlay{
-  position: absolute;
-  background: black;
-  color: #f1f1f1;
-  transition: .5s ease;
-  opacity: 0.9;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-.container:hover .overlay{
-  opacity: 0.9;
 }
 
 .action{
@@ -237,16 +222,20 @@ form{
   padding-right: 2rem;
   margin-top: 2rem;
 }
+.group-inputs, input, textarea {
+  background-color: transparent;
+  background-clip: text;
+  --webkit-background-clip: text;
+  border: 2px solid #141414;
+}
 .group-inputs h2{
-  color: #2b2b2b;
+  color: #f7f7f7;
   font-size: 32px;
   margin-bottom: 8px;
   margin-top: 20px;
   text-align: center;
 }
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], button[type="submit"]{
-  background-color: #ffffff;
-  border: 1px solid #141414;
   height: 30px;
   border-radius: 4px;
   margin-top: 10px;
@@ -254,8 +243,10 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
   font-size: 18px;
   width: 320px;
 }
-input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, input[type="password"]::placeholder{
-  color: #141414;
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, input[type="password"]::placeholder, textarea::placeholder{
+  font-weight: 700;
+  padding-left: 1px;
+  color: #ffffff;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus{
   outline: 0;
@@ -264,9 +255,7 @@ textarea{
   font-size: 18px;
   margin-top: 1rem;
 }
-textarea::placeholder{
-  color: #141414;
-}
+
 .action-send button{
   margin-left: 2.3rem;
   width: 70%;
