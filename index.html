@@ -26,7 +26,6 @@
     <title>Bella Bread</title>
 </head>
 <body>
-
     <!-- ***************** INICIO DO HEADER ***************** -->
     <nav class="nav">
         <img src="/img/logo-nav.png" alt="">
@@ -127,36 +126,29 @@
 
     <!-- ***************** INICIO DO FORM ***************** -->
 
-    <form class="form" action="">
-        <div class="group-inputs">
-            <h2>Entre em contato</h2>
-            <div>
-                <input type="text" placeholder="Nome">
-            </div>
-            <div>
-                <input type="email" placeholder="E-mail">
-            </div>
-            <div>
-                <input type="text" placeholder="Telefone">
-            </div>
-            <textarea name="" id="textarea" cols="30" rows="8" placeholder="Mensagem"></textarea>
-            <div class="action-send">
-                <button type="submit">Enviar</button>
-            </div>
-
-            <div class="get-app-panel">
-                Obtenha nosso aplicativo
-                <div class="app-buttons">
-                    <a href="#">
-                        <img src="/img/appstore.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="/img/googleplay.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </form>
+    <section>
+        <form class="form" action="" method="POST">
+            <fieldset class="group-inputs">
+                <legend>Contact Me</legend>
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" placeholder="Digite seu nome">
+                    </div>
+                    <div>
+                        <label for="">E-mail</label>
+                        <input type="email" placeholder="Digite seu email">
+                    </div>
+                    <div>
+                        <label for="">Phone</label>
+                        <input type="text" placeholder="Telefone">
+                    </div>
+                    <textarea name="" id="textarea" cols="30" rows="8" placeholder="Mensagem"></textarea>
+                    <div class="action-send">
+                        <button type="submit">Enviar</button>
+                    </div>
+            </fieldset>
+        </form>
+    </section>
     <!-- ***************** FIM DO FORM ***************** -->
 
 
@@ -175,6 +167,17 @@
                 <a href="">Joao Chrisostomo</a>
             </h3>
             <p>todos os direitos reservados</p>
+        </div>
+        <div class="get-app-panel">
+            Obtenha nosso aplicativo
+            <div class="app-buttons">
+                <a href="#">
+                    <img src="/img/appstore.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="/img/googleplay.png" alt="">
+                </a>
+            </div>
         </div>
     </footer>
     <!-- ***************** FIM DO FOOTER ***************** -->

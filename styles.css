@@ -76,21 +76,23 @@ html{
 }
 
 .call-to-action{
-  cursor: pointer;
-  background-color: #1b1b1b;
-  color: #FFFFFF;
-  border:0;
-  padding: 14px;
-  border-radius: 4px;
+  color: #090909;
+  padding: 0.7em 1.7em;
   font-size: 18px;
-  font-weight: bold;
-  transition: 0.9s;
+  border-radius: 0.5em;
+  background: #f7d438;
+  border: 1px solid #e8e8e8;
+  transition: all .8s;
+  box-shadow: 4px 4px 9px #c5c5c5,
+              -4px -4px 9px #ffffff;
 }
 
 .call-to-action:hover{
-  transform: scale(1.1);
-  background: rgb(241, 207, 10);
-  color: #080808;
+  border: 1px solid black;
+}
+.call-to-action:active{
+  box-shadow: 2px 2px 6px #0f0f0f,
+             -2px -2px 6px black;
 }
 
 .main a{
@@ -124,8 +126,10 @@ html{
 
 .about img{
   margin-top: 5rem;
-  max-width: 450px;
+  max-width: 560px;
   border-radius: 8px;
+  opacity: 1;
+  transition: 0.9s;
 }
 
 .about div h1{
@@ -196,7 +200,6 @@ html{
   background: rgb(241, 207, 10);
   color: #080808;
 }
-
 /* FIM PRODUCTS */
 
 /* INICIO FORM */
@@ -214,13 +217,8 @@ form{
   border: 1px solid #0f0f0f;
 }
 .group-inputs{
-  justify-content: center;
-  align-items: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .group-inputs, input, textarea {
   background-color: transparent;
@@ -228,12 +226,13 @@ form{
   --webkit-background-clip: text;
   border: 2px solid #141414;
 }
-.group-inputs h2{
-  color: #f7f7f7;
+legend{
+  color: #ffffff;
   font-size: 32px;
   margin-bottom: 8px;
-  margin-top: 20px;
+  margin-top: 16px;
   text-align: center;
+  font-weight: bold;
 }
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], button[type="submit"]{
   height: 30px;
@@ -241,8 +240,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
   margin-top: 10px;
   padding: 10px;
   font-size: 18px;
-  width: 320px;
+  width: 250px;
 }
+
 input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, input[type="password"]::placeholder, textarea::placeholder{
   font-weight: 700;
   padding-left: 1px;
@@ -257,9 +257,9 @@ textarea{
 }
 
 .action-send button{
-  margin-left: 2.3rem;
-  width: 70%;
+  width: 90%;
   height: 2.1rem;
+  margin: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,58 +274,63 @@ textarea{
   color: #080808;
 }
 
-.get-app-panel{
-  color: #ffffff;
-  font-weight: bold;
-  margin-top: 60px;
-  text-align: center;
-}
-
-.app-buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.app-buttons img{
-  height: 50px;
-  padding: 0 2px;
-}
-/* FIM FORM */
-
 /* INICIO RODAPE */
 footer{
   width: 100%;
+  height: 200px;
   background-color: #181818;
-  padding: 60px 0;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
+  flex-direction: row;
   color: #FFFFFF;
+  border: 2px solid #fcfcfc;
 }
 
 footer a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  margin-right: 8px;
   color: #FFFFFF;
-}
-
-footer p {
-  margin-left: 12px;
 }
 
 .menu-footer{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
+  align-items: baseline;
+  flex-direction: column;
+  padding-left: 1rem;
+  gap: 0.7rem;
+}
+
+.social-footer{
+  margin-top: 8rem;
+  padding: 1rem;
+  padding-left: 15rem;
+}
+
+.get-app-panel{
+  padding-right: 1rem;
+  margin-top: 6.5rem;
+}
+.app-buttons img{
+  height: 50px;
+  padding: 0 2px;
 }
 /* FIM RODAPE */
 
+/* INICIO SCROLL */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(243, 236, 236);
+  border: 1px solid #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 39, 38);
+  border-radius: 50px;
+  border: 1px solid #141414;
+}
+/* FIM SCROLL */
 
