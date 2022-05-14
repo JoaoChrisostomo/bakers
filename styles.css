@@ -124,8 +124,7 @@ html{
 
 .logo-about{
   margin-top: 3rem;
-  min-width: 40%;
-  height: 400px;
+  width: 40%;
   margin-right: 10%;
   border-radius: 8px;
   transition: 0.9s;
@@ -138,7 +137,6 @@ html{
   color: #ffffff;
 }
 .about div p{
-  padding-bottom: 10rem;
   font-size: 18px;
   color: #ffffff;
 }
@@ -186,14 +184,14 @@ html{
   opacity: 1;
 }
 .action{
-  margin-right: 4rem;
   background-color: #181818;
   border:0;
-  padding: 12px 28px;
+  padding: 12px 28px;;
   border-radius: 4px;
   font-size: 18px;
   color: #FFFFFF;
   margin-top: 2rem;
+  margin-bottom: 2.5rem;
   cursor: pointer;
   transition: 0.9s;
 }

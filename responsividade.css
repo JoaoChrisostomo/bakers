@@ -25,6 +25,8 @@
         height: 351px;
     }
     .call-to-action{
+        width: 60%;
+        height: 40px;
         font-size: 14px;
     }
     /* FIM DA HOME */
@@ -32,8 +34,7 @@
 
     /* INICIO DO ABOUT */
     .about{
-        width: 100%;
-        padding-left: 10%;
+        margin: 0 auto;
     }
     .about div{
         text-align: center;
@@ -48,6 +49,7 @@
         height: 100vw;
         opacity: 0.8;
         transition: 0.9s;
+        margin-left: 2.5rem;
     }
     .about .logo-about:hover{
         opacity: 5;
@@ -56,14 +58,15 @@
 
     /* INICIO PRODUCTS */
     .title{
-        font-size: 40px;
+        font-size: 36px;
     }
     .owl-carousel .item img{
-        width: 260px;
+        width: 300px;
         opacity: 1;
+        padding: 0px;
+        margin: 0px;
     }
     .action{
-        margin-left: 4.4rem;
         margin-bottom: 2rem;
     }
     /* FIM PRODUCTS */
