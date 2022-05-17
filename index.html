@@ -13,58 +13,126 @@
 
     <!-- ***************** Import Icons ***************** -->
     <link rel="stylesheet" href="boxicons.min.css">
-    <link  rel =" stylesheet " href =" https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css " >
-    <link  rel = " stylesheet "href =" https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
+    <link  rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css " >
+    <link  rel="stylesheet" href=" https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
 
 
     <!-- ***************** Import CSS ***************** -->
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsividade.css">
 
     <!-- ***************** Import JS ***************** -->
-   
     <title>Bella Bread</title>
 </head>
 
 <body>
     <!-- ***************** INICIO DO HEADER ***************** -->
-    <nav class="navigation">
-        <img class="logo" src="/img/bread.png" alt="">
-        <ul class="nav-list">
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#products">Products</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">BellaBread</a>
+            </div>
+            <div class="nav-links">
+                <ul class="links">
+                    <li>
+                        <a href="">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">PRODUTOS</a>
+                        <i class='bx bx-chevron-down arrow products-arrrow'></i>
+                        <ul class="sub-menu">
+                            <li><a href="">Bolos</a></li>
+                            <li>
+                                <a href="">Pães</a>
+                                <i class='bx bx-chevron-right arrow bread-arrrow'></i>
+                                <ul class="more-sub-menu">
+                                    <li><a href="">Veganos</a></li>
+                                    <li><a href="">Vegetarianos</a></li>
+                                    <li><a href="">Sem glutén</a></li>
+                                    <li><a href="">Sem Lactose</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Doces</a></li>
+                            <li><a href="">Sobremesas</a></li>
+                            <li><a href="">Bebidas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">WHO WE ARE</a>
+                        <i class='bx bx-chevron-down arrow who-we-are-arrrow'></i>
+                        <ul class="sub-menu">
+                            <li><a href="">Sobre nós</a></li>
+                            <li><a href="">Nosso time</a></li>
+                            <li><a href="">Depoimentos</a></li>
+                            <li><a href="">Nosso processo</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                        <i class='bx bx-chevron-down arrow contact-arrrow'></i>
+                        <ul class="sub-menu">
+                            <li><a href="">CONTACT FORM</a></li>
+                            <li><a href="">LOCATION</a></li>
+                        </ul>
+                    </li>
+                    <div class="net-working-icons">
+                        <button>
+                            <i class='bx bxs-log-in' style='color:#e6b591' ></i>
+                            <span>Signin</span>
+                        </button>
+                        <button>
+                            <i class='bx bxs-log-out' style='color:#e6b591' ></i>
+                            <span>Signup</span>
+                        </button>
+                        <button>
+                            <i class='bx bx-cart' style='color:#e6b591'></i>
+                            <span class="cart-counter">0</span>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <!-- ***************** FIM DO HEADER ***************** -->
+    <!-- ***************** FIM DO NAV ***************** -->
 
     <!-- ***************** INICIO DA MAIN ***************** -->
-    <section id="home">
-        <div>
-            <h1>Hello and welcome 👋</h1>
-            <p>Products with quality ingredients made with love and natural fermentation!</p>
-            <a href="#products">
-                <button class="call-to-action">
-                    Place your order here!
-                </button>
-            </a>
+    <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+                <h1>Welcome To Tech</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque euismod, nisl eu consectetur consectetur,
+                </p>
+                <button>Describe</button>
+            </div>
         </div>
-    </section>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h1>Welcome To Tech</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque euismod, nisl eu consectetur consectetur,
+                </p>
+                <button>Describe</button>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h1>Welcome To Tech</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque euismod, nisl eu consectetur consectetur,
+
+                </p>
+                <button>Describe</button>
+            </div>
+        </div>
+    </div>
+    
     <!-- ***************** FIM DA MAIN ***************** -->
 
     <!-- ***************** INICIO DO SOBRE ***************** -->
-    <section class="about">
+    <!-- <section class="about">
         <div>
             <h1>Sobre</h1>
             <p>
@@ -76,11 +144,11 @@
             </p>
         </div>
         <img class="logo-about" src="/img/about.jpg" alt="Isto é uma foto da página sobre nesta imagem contem um pão e o fermento natural">
-    </section>
+    </section> -->
     <!-- ***************** FIM DO SOBRE ***************** -->
 
     <!-- ***************** INICIO  DE PRODUTOS ***************** -->
-    <span class="title">Products</span>
+    <!-- <span class="title">Products</span>
     <section>
         <div class="owl-container">
             <p>Breads</p>
@@ -157,26 +225,26 @@
             </div>
             <button class="action">Baixe o nosso app</button>
         </div>
-    </section>
+    </section> -->
     <!-- ***************** FIM DE PRODUTOS ***************** -->
 
 
     <!-- ***************** INICIO DO FORM ***************** -->
 
-    <section>
+    <!-- <section>
         <form class="form" action="" method="POST">
             <legend>Contact Me
-                <div>
+                <div> -->
                     <!-- <label for="">Nome</label> -->
-                    <input type="text" placeholder="Digite seu nome">
+                    <!-- <input type="text" placeholder="Digite seu nome">
                 </div>
-                <div>
+                <div> -->
                     <!-- <label for="">E-mail</label> -->
-                    <input type="email" placeholder="Digite seu email">
+                    <!-- <input type="email" placeholder="Digite seu email">
                 </div>
-                <div>
+                <div> -->
                     <!-- <label for="">Phone</label> -->
-                    <input type="text" placeholder="Telefone">
+                    <!-- <input type="text" placeholder="Telefone">
                 </div>
                 <textarea name="" id="textarea" cols="30" rows="8" placeholder="Mensagem"></textarea>
                 <div class="action-send">
@@ -184,12 +252,12 @@
                 </div>
             </legend>
         </form>
-    </section>
+    </section> -->
     <!-- ***************** FIM DO FORM ***************** -->
 
 
     <!-- ***************** INICIO DO FOOTER ***************** -->
-    <footer>
+    <!-- <footer>
         <div class="menu-footer">
             <a href="">About</a>
             <a href="">Blog</a>
@@ -223,10 +291,11 @@
                     </a>
                 </div>
             </div>
-    </footer>
+    </footer> -->
     <!-- ***************** FIM DO FOOTER ***************** -->
-    <script src="jquery.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 </html>
