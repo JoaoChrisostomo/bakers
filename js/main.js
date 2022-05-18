@@ -15,17 +15,19 @@
 //     }
 // })
 
- $('.owl-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    nav: true,
-    dots: true,
-    autoplay: true,
-    autoPlaySpeed: 1000,
-    smartSpeed: 1000,
-    autoplayHoverPause: true,
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 });
-
-
-
-

@@ -8,7 +8,6 @@
 body{
   align-items: center;
   justify-self: center;
-  font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -24,6 +23,7 @@ nav{
   left: 0;
   z-index: 9;
   position: fixed;
+  font-family: 'nunito';
 }
 nav .navbar{
   height: 100%;
@@ -135,70 +135,41 @@ nav .navbar .nav-links .links .sub-menu li:hover .more-sub-menu{
 .navbar button:hover{
   color: #866d5c;
 }
-.navbar .net-working-icons{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 0.3rem;
-  padding: 0 30px;
-}
 .navbar button i{
-  font-size: 24px;
+  font-size: 15px;
   color: #C8A790;
 }
 button span{
-  font-size: 18px;
+  font-size: 15px;
 }
 /* FIM NAVIGATION */
 
 
-
 /* INICIO MAIN */
- 
-.owl-carousel{
+.swiper {
   width: 100%;
+  height: 500px;
+  align-items: center;
+  margin-top: 5rem;
+}
+.swiper-slide {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.swiper-slide img{
+  width: 90%;
   height: 100%;
-  overflow: hidden;
-}
-.slide{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  text-transform: uppercase;
-}
-.slide::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.5);
-}
-.slide-1{
-  background-image: url('/img/home_hero_01.jpg');
-}
-.slide-2{
-  background-image: url('/img/logo2.jpg');
-}
-.slide-3{
-  background-image: url('/img/logo3.jpg');
 }
 .slide-content{
   position: absolute;
-  top: 45%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%);
   width: 100%;
   padding: 0 20%;
   text-align: center;
-  color: #FFFFFF;
+  color: #f0ebeb;
+  text-transform: uppercase;
 }
 .slide-content h1{
   font-size: 45px;
@@ -207,21 +178,25 @@ button span{
 .slide-content p{
   font-size: 18px;
   font-weight: 300;
+  margin-top: 3rem;
 }
 .slide-content button{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   padding: 10px 25px;
-  border: none;
+  border: 1px solid #C8A790;
   border-radius: 5px;
-  margin-top: 1rem;
+  margin-top: 3rem;
   transition: all 0.9s ease;
   cursor: pointer;
+  background: transparent;
+  color: #ffffff;
 }
 .slide-content button:hover{
-  background-color: #C8A790;
-  color: #FFFFFF;
+  border: 1px solid #7c5437;
+  color: #f3ba92;
 }
+/* FIM MAIN */
 
 
 
